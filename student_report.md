@@ -1,3 +1,5 @@
+## Tobias DiRito & Trevor Olson
+
 ## Objective
 Identify the cryptographic misuse and recover the secret.
 
