@@ -1,3 +1,7 @@
+# Tobias DiRito, Trevor Olson
+# P1 ECB Mode Weakness Submission
+
+
 import sys
 from collections import Counter
 def solve(ciphertext):
