@@ -1,4 +1,8 @@
 //gcc -fno-stack-protector -no-pie -o ex1 ex1.c
+
+// Tobias DiRito & Trevor Olson -- Group 8
+// Project 2 Submission
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
