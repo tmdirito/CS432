@@ -27,6 +27,7 @@ Briefly describe the goal of this assignment.
 - What does `main()` do?
     main() allocates a 16 byte character array on the stack, clears the memory and then uses scanf to read user input into the buffer before printing it out to the user. 
 
+As seen in our screenshots, we used gdb to find the address of the openFlag() function and put that into our python code in order to open the flag. We then set the buffer size to 16 (as shown in ex1.c), and the saved RBP size to 8 (as discussed in lecture and pdfs of slides) so the exploit will run as desired when runnning the python script in conjunction with our C code.
 ---
 
 ### 2.2 Identified Vulnerability
@@ -37,6 +38,5 @@ Briefly describe the goal of this assignment.
     It is unsafe, because it does not restrict the user from overflowing the allocated buffer size of 16 bytes. It essentially reads the user input until it is finished, as oppsoed to checking the size of the input first
 
 ```c
-    Vulnerable line: scanf("%s", buffer);
+    scanf("%s", buffer);
 
-As seen in our screenshots, we used gdb to find the address of the openFlag() function and put that into our python code in order to open the flag. We then set the buffer size to 16 (as shown in ex1.c), and the saved RBP size to 8 (as discussed in lecture and pdfs of slides) so the exploit will run as desired when runnning the python script in conjunction with our C code.
